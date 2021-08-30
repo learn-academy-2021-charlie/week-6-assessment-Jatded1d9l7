@@ -103,14 +103,13 @@ var hodgepodge1 = [23, "Heyyyy!", 45, -10, 0, "Yo", false]
 var hodgepodge2 = [5, "Hola", 43, -34, "greetings", true]
 // Expected output: [ 2, 1, -1 ]
 
-const remDiv3 = (array) => {
-  if (typeof(value) === 'number'){
-    return value
+  const remDiv3 = (arr) =>{
+    let filter = arr.filter(value => typeof value == 'number')
+    let onlyRems = filter.map(value => value % 3)
+    return onlyRems
   }
-}
 
-console.log(remDiv3(hodgepodge1))
-
+console.log(remdiv3(onlyrems))
 
 // Ƹ̵̡Ӝ̵̨̄Ʒ ▬▬ι═══════ﺤ    CODE BLOCK END     -═══════ι▬▬ Ƹ̵̡Ӝ̵̨̄Ʒ // 
 
